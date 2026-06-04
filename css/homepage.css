@@ -776,7 +776,7 @@ ul.page_listview_area.sidebyside_list {
   padding: 20px 20px 0 20px;
   display: grid;
   grid-template-columns: 1fr auto;
-  gap: 24px;
+  gap: 20px;
   align-items: start;
   overflow: hidden;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 15px;
@@ -814,6 +814,7 @@ ul.page_listview_area.sidebyside_list {
 }
 .service-title~p {
   margin-top: 5px;
+  margin-bottom: 15px;
 }
 .ti-row {
   display: grid;
