@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 /* Variable CSS Start */
 :root {
   --body-font: #333333;
@@ -213,7 +212,7 @@ p {
   color: var(--primary);
 }
 .cmn-primary-btn span {
-  background: url(../images/homepage/btn-arrow.svg) no-repeat center var(--white);
+  background: var(--white);
   width: 32px;
   height: 32px;
   display: flex;
@@ -222,6 +221,12 @@ p {
   border-radius: 40px;
   margin-left: 10px;
   margin-right: -5px;
+  color: var(--primary);
+}
+.cmn-primary-btn span:after {
+    content: '\e9cf';
+    font-family: 'icomoon';
+    font-weight: 500;
 }
 .cmn-primary-btn:hover span {
   background-color: var(--primary-light);
@@ -3104,6 +3109,9 @@ overflow: hidden;
   ul.page_listview_area.sidebyside_list {
     grid-template-columns: 100%;
   }
+  .service-title.have_aipowered {
+    display: inline-block;
+}
   /* ____________________________________________________ */
   .ai-uber-glow {
     top: 0;
@@ -3224,6 +3232,9 @@ overflow: hidden;
 .followus-cnt ul li i {
     color: #000;
     font-size: 18px;
+}
+.ai-badge {
+    padding: 5px 9px;
 }
 
 }
