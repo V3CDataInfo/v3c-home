@@ -812,6 +812,29 @@ ul.page_listview_area.sidebyside_list {
   color: #000;
   margin-bottom: 0;
 }
+.service-title.have_aipowered {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    flex-wrap: wrap;
+}
+.ai-badge {
+    font-size: 10px;
+    line-height: 1em;
+    padding: 7px 9px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    border: 1px solid #a3dcb8;
+    text-align: center;
+    display: inline-block;
+    color: #009500;
+    background-color: #f0fdf4;
+    text-transform: uppercase;
+    font-weight: 500;
+}
 .service-title~p {
   margin-top: 5px;
   margin-bottom: 15px;
