@@ -751,6 +751,8 @@ ul.page_listview_area.sidebyside_list {
 .goliveproducts-section {
   padding: 50px 0;
   background: #f9f9f9;
+  position: relative;
+  z-index: 1;
 }
 .all-service-cards {
   display: flex;
@@ -778,6 +780,7 @@ ul.page_listview_area.sidebyside_list {
 .service-step-card.card-4 {
   --index: 4
 }
+
 .service-card {
   background-color: #fff;
   border: 1px solid #e4e4e4;
@@ -970,6 +973,19 @@ ul.page_listview_area.sidebyside_list {
   align-items: flex-end;
   justify-content: center;
   gap: 30px;
+}
+
+
+.card-2,
+.card-3,
+.card-4 {
+  pointer-events: none; /* disable the card's overlap area */
+}
+
+.card-2 .service-card,
+.card-3 .service-card,
+.card-4 .service-card {
+  pointer-events: all; /* re-enable only the actual content */
 }
 /* __________________________________________________________ */
 .why-choose-section {
@@ -1623,9 +1639,10 @@ ul.icon-listarea li:hover .inner-hd-big {
 .ourapp-img {
   text-align: center;
 }
-.client-row-twocol ul li:hover .ourapp-img img,
-.client-row-threecol ul li:hover .ourapp-img img {
-  transform: none;
+.client-row-twocol ul li .ourapp-img img,
+.client-row-threecol ul li .ourapp-img img {
+  vertical-align: top;
+
 }
 .process-cnt ul {
   display: flex;
@@ -3035,6 +3052,7 @@ overflow: hidden;
 }
 .stats-section {
     flex-direction: column;
+    min-height: 320px;
 }
 .col {
     display: grid;
