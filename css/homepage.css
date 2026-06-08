@@ -547,7 +547,9 @@ ul.page_listview_area.sidebyside_list {
   z-index: -1;
 }
 .hero-right {
-  margin-top: -137px;
+   position: relative;
+  top: -137px;
+  margin-bottom: -137px;   /* collapse the gap it would otherwise leave */
 }
 /* ── Main Section ── */
 .stats-section {
@@ -556,6 +558,7 @@ ul.page_listview_area.sidebyside_list {
   align-items: flex-end;
   width: 100%;
   max-width: 1280px;
+  min-height: 588px;
 }
 /* ── Column Base ── */
 .col {
@@ -573,6 +576,7 @@ ul.page_listview_area.sidebyside_list {
   flex-shrink: 0;
   width: 100%;
 }
+/* remove the fixed heights from .photo-wrap entirely */
 .photo-wrap img {
   width: 100%;
   height: 100%;
@@ -2234,6 +2238,10 @@ ul.features-row li .features-title-area {
   border-radius: 12px;
   padding: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
 }
 .ai-feature-card:hover {
   transform: translateY(-5px);
@@ -2642,10 +2650,14 @@ overflow: hidden;
     padding: 10px;
   }
   .hero-right {
-    margin-top: -117px;
+    top: -117px;
+    margin-bottom: -117px;
   }
   .stat-number em, .stat-number-green em {
     font-size: 31px;
+}
+.stats-section {
+    min-height: initial;
 }
   /* __________________________________________________ */
   .main-title {
@@ -2834,7 +2846,8 @@ overflow: hidden;
     -o-border-radius: 10px;
   }
   .hero-right {
-    margin-top: -17px;
+    top: -17px;
+    margin-bottom: -17px;
   }
   .stat-number em, .stat-number-green em {
     font-size: 19px;
@@ -3045,6 +3058,8 @@ overflow: hidden;
     padding-bottom: 10px;
 }
 .hero-right {
+    margin: 0;
+    top: 0;
     margin-top: 20px;
 }
 .col-2 .stat-card,
@@ -3111,6 +3126,13 @@ overflow: hidden;
   }
   .service-title.have_aipowered {
     display: inline-block;
+}
+.service-title.have_aipowered img{
+  transform: translateY(5px);
+  -webkit-transform: translateY(5px);
+  -moz-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  -o-transform: translateY(5px);
 }
   /* ____________________________________________________ */
   .ai-uber-glow {
