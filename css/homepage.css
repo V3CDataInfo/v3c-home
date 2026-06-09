@@ -1915,6 +1915,7 @@ ul.features-row li .features-title-area {
   border-radius: 15px;
   font-weight: var(--h-font-semibold);
   gap: 15px;
+  margin: 0;
 }
 .faq-question .icon {
   position: relative;
@@ -2292,6 +2293,11 @@ ul.features-row li .features-title-area {
   vertical-align: top;
   max-width: 50vw;
 }
+
+
+
+
+
 /* ___________________________________________ */
 .build-ondemand-app {
   position: relative;
@@ -2905,9 +2911,10 @@ overflow: hidden;
     width: 100%;
     padding: 0;
   }
-  ai-uber-visual{
+  .ai-uber-visual{
     display: none;
   }
+
   /* __________________________________________________ */
   .firstbillion-cnt {
     display: grid;
@@ -2999,10 +3006,6 @@ overflow: hidden;
   .hd-sidebyside {
     flex-direction: column;
   }
-  .cmn-outline-btn,
-  .cmn-primary-btn {
-    font-size: 14px;
-  }
   .ai_tag {
     font-size: 14px;
   }
@@ -3016,7 +3019,7 @@ overflow: hidden;
     padding: 40px 0;
   }
   .realcompany-section {
-    padding: 0 0 40px;
+    padding: 40px 0;
   }
   .blog-section {
     padding-bottom: 40px;
@@ -3038,6 +3041,9 @@ overflow: hidden;
 }
 .allourapps-section {
     padding: 0;
+}
+.clients-visitus {
+    padding: 40px 0;
 }
 /* ____________________________________________________ */
 .col-1 .stat-card, .col-2 .stat-card, .col-5 .stat-card, .col-3 .stat-card, .col-4 .stat-card {
@@ -3126,11 +3132,13 @@ overflow: hidden;
   bottom: 0;
 }
 /* ____________________________________________________ */
+
 .tab {
     justify-content: space-between;
 }
   .service-card {
     border-radius: 12px;
+    padding: 15px;
   }
   .service-title {
     font-size: 22px;
@@ -3151,6 +3159,17 @@ overflow: hidden;
   -moz-transform: translateY(5px);
   -ms-transform: translateY(5px);
   -o-transform: translateY(5px);
+}
+.card-visual {
+    margin: 0 0 15px;
+}
+.all-service-cards .card-visual img{
+  bottom: 0;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
   /* ____________________________________________________ */
   .ai-uber-glow {
@@ -3201,33 +3220,32 @@ overflow: hidden;
   .meetexpert-cnt {
     gap: 15px;
   }
-  .masonry-block_.col-3_3 {
-    width: calc(26% - 5px);
-    width: -o-calc(26% - 5px);
-    width: -ms-calc(26% - 5px);
-    width: -moz-calc(26% - 5px);
-    width: -webkit-calc(26% - 5px);
+   .masonry ._row_ {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+  }
+
+  .masonry-block_ {
+    width: 100% !important;
+  }
+
+  .masonry-block_ img {
+    width: 100%;
+    height: 155px;
+    object-fit: cover;
+    object-position: top center;
+  }
+
+.view-more img {
+    object-fit: cover;
+    height: 80px;
 }
-    .masonry-block_.col-5_1 {
-    width: calc(46% - 5px);
-    width: -o-calc(46% - 5px);
-    width: -ms-calc(46% - 5px);
-    width: -moz-calc(46% - 5px);
-    width: -webkit-calc(46% - 5px);
+.masonry-block_ a.view-more:before {
+   display: block;
 }
-  .masonry-block_.col-3_2 {
-    width: calc(26% - 5px);
-    width: -o-calc(26% - 5px);
-    width: -ms-calc(26% - 5px);
-    width: -moz-calc(26% - 5px);
-    width: -webkit-calc(26% - 5px);
-}
-.masonry-block_.col-5 {
-    width: calc(39.3% - 5px);
-    width: -o-calc(39.3% - 5px);
-    width: -ms-calc(39.3% - 5px);
-    width: -moz-calc(39.3% - 5px);
-    width: -webkit-calc(39.3% - 5px);
+.masonry-block_ a.view-more>span {
+    font-size: 18px;
 }
   /* ____________________________________________________ */
   .blog-listing {
@@ -3276,7 +3294,58 @@ overflow: hidden;
 .ai-badge {
     padding: 5px 9px;
 }
+.clients-visitus ul {
+    grid-template-columns: 100%;
+}
+.clients-visitus ul li .big-button .common-btn {
+    font-size: 24px;
+    line-height: 1.3em;
+    padding: 27px;
+}
+.social-contact{
+  margin-top: 10px;
+}
+}
 
+@media (max-width:580px) {
+.why-choose-inner {
+    grid-template-columns: 100%;
+}
+.grid-wrapper {
+    grid-template-columns: 100%;
+}
+.grid-wrapper.two-row-card {
+    grid-template-columns: 100%;
+}
+.card-award {
+    height: 190px;
+}
+.card.card-retention {
+    height: 160px;
+}
+.card-ondemand .man-img img {
+    margin: auto;
+}
+.card-ui {
+    padding: 10px 0 0 15px;
+    gap: 13px;
+}
+.cmn-primary-btn span {
+    width: 25px;
+    height: 25px;
+    margin-left: 8px;
+}
+.cmn-primary-btn {
+    height: 40px;
+    padding: 0px 13px;
+}
+.cmn-outline-btn{
+  height: 40px;
+}
+.cmn-outline-btn, .cmn-primary-btn{
+font-size: 13px;
+line-height: 1em;
+}
 }
 @media (max-width:390px) {
     .tab .tablinks {
@@ -3284,14 +3353,7 @@ overflow: hidden;
     text-align: center;
     font-size: 15px;
 }
-.cmn-primary-btn span {
-    width: 30px;
-    height: 30px;
-}
-.cmn-primary-btn {
-    height: 45px;
-    padding: 0px 13px;
-}
+
  .social-contact ul li span img {
     height: 16px;
   }
