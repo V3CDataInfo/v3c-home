@@ -2994,6 +2994,62 @@ overflow: hidden;
     margin-top: 20px;
     padding-top: 20px;
   }
+  .why-choose-inner {
+      grid-template-columns: 100%;
+  }
+  .card-rocket .headline {
+      font-size: 32px;
+  }
+  .why-choose-inner .left_side {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .card.card-ondemand {
+      align-items: center;
+  }
+  .grid-wrapper {
+      grid-template-columns: 1.5fr 1fr;
+  }
+  .card-ui .headline {
+      font-size: 32px;
+  }
+  .card-whitelabel .headline,
+  .card-support .headline {
+      font-size: 25px;
+  }
+  .card-whitelabel .sub,
+  .card-support .desc {
+    font-size: 16px;
+  }
+  .card-group .big-num {
+      font-size: 20px;
+  }
+  .card-group .ent-text {
+    font-size: 18px;
+  }
+}
+@media (max-width:767px) {
+  .grid-wrapper {
+      grid-template-columns: 100%;
+  }
+  .card .bg-img {
+      position: relative;
+  }
+  .card-group .big-num {
+    font-size: 36px;
+  }
+  .card-group .ent-text {
+    font-size: 23px;
+  }
+  .card-support .headline {
+    font-size: 26px;
+  }
+  .card-retention .big-num {
+    font-size: 36px;
+  }
+  .card-rocket .headline {
+      font-size: 25px;
+  }
 }
 @media (max-width:630px) {
   h1.cmn-hd {
@@ -3305,6 +3361,40 @@ overflow: hidden;
 .social-contact{
   margin-top: 10px;
 }
+.clients-visitus ul li .big-button .common-btn {
+    border-radius: 20px;
+}
+.clients-visitus ul li:last-child {
+    box-shadow: none;
+}
+.clients-visitus ul li .big-button {
+    padding: 0;
+}
+}
+
+@media (max-width:480px) {
+  .why-choose-inner .left_side {
+    grid-template-columns: 100%;;
+  }
+  .card-group .ent-text {
+      font-size: 18px;
+  }
+  .card-group .big-num {
+      font-size: 20px;
+  }
+  .card-group {height: 200px;}
+  .card-ui {
+      flex-direction: column;
+  }
+  .card-ui .headline {
+    font-size: 25px;
+  }
+  .card-ui .headline br {
+      display: none;
+  }
+  .card-rocket {
+    padding: 20px 0 0 20px;
+  }
 }
 
 @media (max-width:580px) {
@@ -3349,11 +3439,10 @@ line-height: 1em;
 }
 @media (max-width:390px) {
     .tab .tablinks {
-    padding: 8px 5px 12px 5px;
-    text-align: center;
-    font-size: 15px;
-}
-
+      padding: 8px 5px 12px 5px;
+      text-align: center;
+      font-size: 15px;
+  }
  .social-contact ul li span img {
     height: 16px;
   }
@@ -3361,10 +3450,10 @@ line-height: 1em;
     padding: 15px;
   }
   .social-contact ul li span, .social-contact ul li strong {
-    margin-right: 5px;
-    font-size: 14px;
-}
-.social-contact ul li a {
-    font-size: 14px;
-}
+      margin-right: 5px;
+      font-size: 14px;
+  }
+  .social-contact ul li a {
+      font-size: 14px;
+  }
 }
