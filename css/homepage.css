@@ -1953,12 +1953,12 @@ ul.features-row li .features-title-area {
   display: none;
 }
 .faq-item.active .faq-answer {
-  max-height: 200px;
+  max-height: 410px;
   padding: 0;
   display: block;
 }
 .faq-item.active .faq-question .icon::before {
-  content: "−";
+  content: "-";
 }
 .faq-container {
   display: flex;
