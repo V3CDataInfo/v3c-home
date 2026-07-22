@@ -2943,12 +2943,28 @@ overflow: hidden;
     width: 100%;
   }
   /* __________________________________________________ */
-  .process-cnt ul li:after {
+  .process-cnt ul li:after,
+  .process-cnt ul li:nth-child(even):after {
+      top: auto;
+      bottom: -60px;
+      right: auto;
+      left: 50%;
+      transform: rotate(90deg) translatey(50%);
+      -webkit-transform: rotate(90deg) translatey(50%);
+      -moz-transform: rotate(90deg) translatey(50%);
+      -ms-transform: rotate(90deg) translatey(50%);
+      -o-transform: rotate(90deg) translatey(50%);
+}
+  .process-cnt ul li:hover:before {
     display: none;
+  }
+  .process-cnt ul li p {
+      min-height: initial;
   }
   .process-cnt ul {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 100%;
+    gap: 100px;
   }
   .process-cnt ul li {
     width: 100%;
