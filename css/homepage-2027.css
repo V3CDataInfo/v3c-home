@@ -819,7 +819,7 @@ ul.page_listview_area.sidebyside_list {
   transition: all 0.3s ease;
 }
 
-.stat-icon-badge svg {
+.stat-icon-badge img {
   width: 30px;
   height: 30px;
 }
@@ -1975,21 +1975,26 @@ ul.icon-listarea li:hover .inner-hd-big {
   justify-content: center;
   border-radius: 18px;
   padding: 10px;
+  font-size: 45px;
 }
 
 /* Card 1 Custom CSS Background Tint: Light Blue */
 .nomatter-icon.commit-bg {
   background: #EDF3FE;
+  color: #0D67FE;
 }
 
 /* Card 2 Custom CSS Background Tint: Light Peach */
 .nomatter-icon.excellence-bg {
   background: #FEF5ED;
+  color: #FD6F10;
+
 }
 
 /* Card 3 Custom CSS Background Tint: Light Green */
 .nomatter-icon.deadlines-bg {
   background: #EEF6EB;
+  color: #4F9E43;
 }
 
 /* Card 1: Royal Blue Accent Left Border */
@@ -2265,12 +2270,15 @@ ul.icon-listarea li:hover .inner-hd-big {
   border-radius: 50%;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content:center;
   width: 120px;
   height: 120px;
   margin: auto;
   margin-bottom: 20px;
   border: 5px solid #ffff;
+  text-align: center;
+  font-size: 50px;
+  color: #4169E1;
 }
 
 .step-number-badge {
@@ -2293,14 +2301,17 @@ ul.icon-listarea li:hover .inner-hd-big {
 
 .process-cnt ul li:nth-child(2) .process-icon {
   background: #FEF5E2;
+  color: #ff9900;
 }
 
 .process-cnt ul li:nth-child(3) .process-icon {
   background: #EFE8FE;
+  color: #7262d3;
 }
 
 .process-cnt ul li:nth-child(4) .process-icon {
   background: #E1FBF0;
+  color: #348d68;
 }
 
 .process-icon img {
@@ -3095,8 +3106,8 @@ ul.features-row li .features-title-area {
     pointer-events: none;
 }
 .ai-icon-box{
-    width: 64px;
-    height: 64px;
+    width: 60px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3106,6 +3117,11 @@ ul.features-row li .features-title-area {
     -moz-border-radius: 12px;
     -ms-border-radius: 12px;
     -o-border-radius: 12px;
+    font-size: 35px;
+    color: var(--primary);
+}
+.ai-icon-box::before{
+  color: var(--primary);
 }
 .ai-icon-box svg{
   width: 30px;
@@ -3153,7 +3169,7 @@ ul.features-row li .features-title-area {
 
 .ai-feature-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
@@ -3184,7 +3200,8 @@ ul.features-row li .features-title-area {
   font-size: 18px;
   color: #000;
   display: block;
-  margin-bottom: 10px;
+  line-height: 24px;
+  margin-bottom: 0;
 }
 
 .ai-feature-card p{
@@ -4223,7 +4240,7 @@ h1.cmn-hd {
     width: 60px;
     height: 60px;
 }
-.stat-icon-badge svg {
+.stat-icon-badge img {
     width: 25px;
     height: 25px;
 }
