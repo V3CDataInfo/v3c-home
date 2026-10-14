@@ -2123,7 +2123,6 @@ ul.icon-listarea li:hover .inner-hd-big {
   color: #000;
   line-height: 1.2em;
   margin-bottom: 10px;
-  min-height: 55px;
 }
 
 .nomatter-desc {
@@ -3185,8 +3184,8 @@ ul.features-row li .features-title-area {
     pointer-events: none;
 }
 .ai-icon-box{
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3196,7 +3195,7 @@ ul.features-row li .features-title-area {
     -moz-border-radius: 12px;
     -ms-border-radius: 12px;
     -o-border-radius: 12px;
-    font-size: 35px;
+    font-size: 30px;
     color: var(--primary);
 }
 .ai-icon-box::before{
@@ -3207,13 +3206,13 @@ ul.features-row li .features-title-area {
   height: 30px;
 }
 .ai-uber-section .container {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 40px;
-  padding: 0 30px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 15px;
 }
 
 .ai-uber-bg-grid {
@@ -3249,38 +3248,35 @@ ul.features-row li .features-title-area {
 .ai-feature-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 15px;
 }
 
 .ai-feature-card {
   background: #fff;
   border-radius: 12px;
-  padding: 20px;
+  padding: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
   gap: 15px;
+  display: grid;
+  grid-template-columns: auto 1fr;
   border: 1px solid var(--line);
   box-shadow: var(--shadow-card);
-  -webkit-border-radius:;
-  -moz-border-radius:;
-  -ms-border-radius:;
-  -o-border-radius:;
   -webkit-transition: transform 0.3s ease, box-shadow 0.3s ease;
   -moz-transition: transform 0.3s ease, box-shadow 0.3s ease;
   -ms-transition: transform 0.3s ease, box-shadow 0.3s ease;
   -o-transition: transform 0.3s ease, box-shadow 0.3s ease;
+  align-items: center;
 }
 .ai-feature-card:hover{
   border-color: var(--primary);
   box-shadow: 0 0 10px rgba(0,0,0,.1);
 }
 .ai-feature-card .ub_title {
-  font-size: 18px;
-  color: #000;
-  display: block;
-  line-height: 24px;
-  margin-bottom: 0;
+    font-size: 17px;
+    color: #000;
+    display: block;
+    line-height: 22px;
+    margin-bottom: 0;
 }
 
 .ai-feature-card p{
@@ -3304,7 +3300,7 @@ ul.features-row li .features-title-area {
 
 .ai-uber-visual img {
   vertical-align: top;
-  max-width: 35vw;
+  max-width: 26vw;
 }
 /* ___________________________________________ */
 .build-ondemand-app {
@@ -3753,7 +3749,7 @@ select, textarea {
 @media (max-width:1450px) {
 
   .ai-uber-visual img {
-    max-width: 45vw;
+    max-width: 39vw;
   }
   .hero-right img {
     max-width: 44vw;
